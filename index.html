@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>25 Days FREE Share Market Class Nepal | NEPSE Training | Sunrise Technology</title>
+  <meta name="description" content="Join 25 Days FREE Online Share Market Class in Nepal by Sunrise Technology. Learn NEPSE trading in simple Nepali from complete beginner to confident trader. Android phones only." />
+  <meta name="keywords" content="free share market class Nepal, NEPSE training Nepal, online share market class Nepal, NEPSE sikne, share market Nepal, free trading class Nepal" />
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===========================
+       ANDROID-ONLY GATE STYLES
+    =========================== */
+    #android-gate {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: linear-gradient(135deg, #0f0f1a 0%, #1a0a2e 50%, #0f0f1a 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    #android-gate .gate-icon {
+      font-size: 72px;
+      margin-bottom: 24px;
+      filter: grayscale(0.3);
+    }
+    #android-gate h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: #FF7A18;
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+    #android-gate p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      color: #e2e8f0;
+      margin: 0 0 12px;
+      line-height: 1.6;
+    }
+    #android-gate .gate-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #FF7A18, #FFB703);
+      border-radius: 2px;
+      margin: 20px auto;
+    }
+
+    /* ===========================
+       HIDE MAIN CONTENT BY DEFAULT
+    =========================== */
+    #main-content {
+      display: none;
+    }
+
+    /* ===========================
+       RESET & BASE
+    =========================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+      background: #FFF1E6;
+      color: #1F2937;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ===========================
+       HEADER — DARK STRIP
+    =========================== */
+    header {
+      background: #050810;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .header-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    nav a:hover { color: #FFB703; }
+
+    /* ===========================
+       HERO SECTION
+    =========================== */
+    .hero {
+      position: relative;
+      background: linear-gradient(160deg, #FFF1E6 0%, #FFE0B2 30%, #FF7A18 70%, #FFB703 100%);
+      overflow: hidden;
+      padding: 40px 20px 0;
+      min-height: 100svh;
+    }
+
+    /* Rising sun animation */
+    .sun-container {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 300px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .sun {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 40%, #fff9c4, #FFD600, #FF8C00, #FF4500);
+      box-shadow:
+        0 0 40px 20px rgba(255,183,3,0.5),
+        0 0 80px 40px rgba(255,122,24,0.3),
+        0 0 120px 60px rgba(255,122,24,0.15);
+      animation: sunRise 3s ease-out forwards;
+    }
+    @keyframes sunRise {
+      from { bottom: -100px; opacity: 0.3; }
+      to   { bottom: 20px;  opacity: 1; }
+    }
+    .sun-rays {
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: conic-gradient(
+        from 0deg,
+        transparent 0deg, rgba(255,215,0,0.12) 10deg,
+        transparent 20deg, rgba(255,215,0,0.12) 30deg,
+        transparent 40deg, rgba(255,215,0,0.12) 50deg,
+        transparent 60deg, rgba(255,215,0,0.12) 70deg,
+        transparent 80deg, rgba(255,215,0,0.12) 90deg,
+        transparent 100deg, rgba(255,215,0,0.12) 110deg,
+        transparent 120deg, rgba(255,215,0,0.12) 130deg,
+        transparent 140deg, rgba(255,215,0,0.12) 150deg,
+        transparent 160deg, rgba(255,215,0,0.12) 170deg,
+        transparent 180deg, rgba(255,215,0,0.12) 190deg,
+        transparent 200deg, rgba(255,215,0,0.12) 210deg,
+        transparent 220deg, rgba(255,215,0,0.12) 230deg,
+        transparent 240deg, rgba(255,215,0,0.12) 250deg,
+        transparent 260deg, rgba(255,215,0,0.12) 270deg,
+        transparent 280deg, rgba(255,215,0,0.12) 290deg,
+        transparent 300deg, rgba(255,215,0,0.12) 310deg,
+        transparent 320deg, rgba(255,215,0,0.12) 330deg,
+        transparent 340deg, rgba(255,215,0,0.12) 350deg,
+        transparent 360deg
+      );
+      animation: rotateSun 12s linear infinite;
+    }
+    @keyframes rotateSun {
+      from { transform: translateX(-50%) rotate(0deg); }
+      to   { transform: translateX(-50%) rotate(360deg); }
+    }
+
+    /* Mountains silhouette */
+    .mountains {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 140px;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .mountains svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Floating clouds */
+    .cloud {
+      position: absolute;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.55);
+      filter: blur(2px);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .cloud-1 { width: 80px; height: 24px; top: 60px; left: -20px; animation: floatCloud 18s linear infinite; }
+    .cloud-2 { width: 60px; height: 18px; top: 90px; left: -10px; animation: floatCloud 24s linear 4s infinite; }
+    .cloud-3 { width: 50px; height: 16px; top: 45px; right: 10px; animation: floatCloudRev 20s linear 2s infinite; }
+    @keyframes floatCloud {
+      from { transform: translateX(-120px); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      to   { transform: translateX(calc(100vw + 120px)); opacity: 0; }
+    }
+    @keyframes floatCloudRev {
+      from { transform: translateX(120px); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      to   { transform: translateX(calc(-100vw - 120px)); opacity: 0; }
+    }
+
+    /* Hero content */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.92);
+      color: #c05c00;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(255,122,24,0.3);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .hero-badge span { font-size: 13px; }
+    .hero-title {
+      font-size: 30px;
+      font-weight: 900;
+      color: #1F2937;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .hero-title .highlight {
+      background: linear-gradient(135deg, #FF7A18, #FFB703);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 28px;
+      font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+    }
+
+    /* Download Button */
+    .download-btn-wrap {
+      margin-bottom: 10px;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #FF7A18 0%, #FF4D6D 50%, #FFB703 100%);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 50px;
+      width: 100%;
+      box-shadow:
+        0 6px 20px rgba(255,122,24,0.5),
+        0 2px 8px rgba(255,77,109,0.3);
+      letter-spacing: 0.2px;
+      transition: transform 0.15s, box-shadow 0.15s;
+      animation: btnPulse 2.5s ease-in-out infinite;
+      border: none;
+      cursor: pointer;
+    }
+    .download-btn:active {
+      transform: scale(0.97);
+      box-shadow: 0 3px 10px rgba(255,122,24,0.4);
+    }
+    @keyframes btnPulse {
+      0%, 100% { box-shadow: 0 6px 20px rgba(255,122,24,0.5), 0 2px 8px rgba(255,77,109,0.3); }
+      50%       { box-shadow: 0 8px 30px rgba(255,122,24,0.7), 0 4px 16px rgba(255,77,109,0.5); }
+    }
+    .android-icon-svg { flex-shrink: 0; }
+    .btn-note {
+      font-size: 11px;
+      color: #6B4226;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 8px;
+      background: rgba(255,255,255,0.7);
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    /* Phone mockup */
+    .phone-mockup-wrap {
+      position: relative;
+      z-index: 2;
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 160px;
+    }
+    .phone-frame {
+      width: 180px;
+      border-radius: 30px;
+      background: #111827;
+      padding: 8px;
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.4),
+        0 8px 20px rgba(255,122,24,0.3),
+        inset 0 0 0 1px rgba(255,255,255,0.1);
+      position: relative;
+    }
+    .phone-notch {
+      width: 50px;
+      height: 8px;
+      background: #111827;
+      border-radius: 0 0 8px 8px;
+      margin: 0 auto 4px;
+      position: relative;
+      z-index: 2;
+    }
+    .phone-screen {
+      border-radius: 22px;
+      overflow: hidden;
+      height: 280px;
+      background: linear-gradient(160deg, #0f1a2e 0%, #1a3a5c 40%, #FF7A18 100%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .phone-screen-content {
+      width: 100%;
+      padding: 10px;
+    }
+    /* NEPSE chart SVG */
+    .nepse-chart {
+      width: 100%;
+      height: 120px;
+    }
+    .phone-label {
+      color: #FFB703;
+      font-size: 9px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .phone-price {
+      color: #4ade80;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    /* ===========================
+       STRIP SECTION
+    =========================== */
+    .strip {
+      background: linear-gradient(90deg, #FF7A18, #FF4D6D, #FFB703);
+      padding: 16px 20px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .strip::-webkit-scrollbar { display: none; }
+    .strip-inner {
+      display: flex;
+      gap: 0;
+      min-width: max-content;
+    }
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      padding: 0 18px;
+      white-space: nowrap;
+    }
+    .strip-item:not(:last-child) {
+      border-right: 1px solid rgba(255,255,255,0.3);
+    }
+    .strip-icon { font-size: 18px; }
+
+    /* ===========================
+       SECTION COMMON
+    =========================== */
+    section {
+      padding: 48px 20px;
+    }
+    .section-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #FF7A18, #FFB703);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #1F2937;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .section-title .orange { color: #FF7A18; }
+    .section-sub {
+      font-size: 14px;
+      color: #4B5563;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    /* ===========================
+       WHO IS THIS FOR
+    =========================== */
+    .who-section {
+      background: #fff;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .who-card {
+      background: linear-gradient(135deg, #FFF1E6, #FFE0B2);
+      border-radius: 16px;
+      padding: 16px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(255,122,24,0.1);
+      border: 1px solid rgba(255,122,24,0.15);
+    }
+    .who-emoji { font-size: 26px; line-height: 1; flex-shrink: 0; }
+    .who-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1F2937;
+      line-height: 1.4;
+    }
+    .who-desc {
+      font-size: 11px;
+      color: #6B7280;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    /* ===========================
+       25 DAYS JOURNEY
+    =========================== */
+    .journey-section {
+      background: linear-gradient(180deg, #FFF1E6 0%, #E0F2FE 100%);
+    }
+    .week-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      border-left: 4px solid;
+      position: relative;
+      overflow: hidden;
+    }
+    .week-card::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      opacity: 0.08;
+    }
+    .week-card.dawn   { border-color: #FF7A18; }
+    .week-card.dawn::before { background: #FF7A18; }
+    .week-card.morning { border-color: #FFB703; }
+    .week-card.morning::before { background: #FFB703; }
+    .week-card.midday { border-color: #FF4D6D; }
+    .week-card.midday::before { background: #FF4D6D; }
+    .week-card.afternoon { border-color: #38bdf8; }
+    .week-card.afternoon::before { background: #38bdf8; }
+    .week-card.golden { border-color: #FFD600; }
+    .week-card.golden::before { background: #FFD600; }
+
+    .week-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .week-emoji { font-size: 28px; }
+    .week-info {}
+    .week-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: #1F2937;
+    }
+    .week-days {
+      font-size: 11px;
+      color: #6B7280;
+      font-weight: 500;
+    }
+    .week-topics {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .week-topics li {
+      font-size: 12.5px;
+      color: #374151;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.4;
+    }
+    .week-topics li::before {
+      content: '▸';
+      color: #FF7A18;
+      font-size: 11px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ===========================
+       WHY SUNRISE
+    =========================== */
+    .why-section {
+      background: #fff;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .why-card {
+      background: linear-gradient(135deg, #E0F2FE, #FFF1E6);
+      border-radius: 16px;
+      padding: 18px 14px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .why-icon { font-size: 30px; margin-bottom: 8px; }
+    .why-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1F2937;
+      line-height: 1.4;
+    }
+    .why-desc {
+      font-size: 11px;
+      color: #6B7280;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ===========================
+       HOW TO JOIN
+    =========================== */
+    .join-section {
+      background: linear-gradient(135deg, #FFF1E6, #FFE0B2);
+    }
+    .steps-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .step-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      box-shadow: 0 3px 12px rgba(255,122,24,0.12);
+    }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF7A18, #FFB703);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body {}
+    .step-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1F2937;
+      margin-bottom: 4px;
+    }
+    .step-desc {
+      font-size: 12.5px;
+      color: #4B5563;
+      line-height: 1.5;
+    }
+    .step-note {
+      font-size: 11.5px;
+      color: #FF7A18;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    /* ===========================
+       FAQ
+    =========================== */
+    .faq-section {
+      background: #fff;
+    }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq-item {
+      background: linear-gradient(135deg, #FFF1E6, #fff);
+      border-radius: 14px;
+      padding: 16px;
+      border: 1px solid rgba(255,122,24,0.15);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .faq-q {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1F2937;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .faq-q::before {
+      content: 'Q';
+      background: linear-gradient(135deg, #FF7A18, #FFB703);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .faq-a {
+      font-size: 12.5px;
+      color: #4B5563;
+      line-height: 1.6;
+      padding-left: 28px;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: #050810;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 32px 20px 40px;
+    }
+    .footer-logo {
+      margin: 0 auto 12px;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-logo img {
+      height: 56px;
+      width: auto;
+    }
+    .footer-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #FFB703;
+      margin-bottom: 8px;
+    }
+    .footer-disclaimer {
+      font-size: 11px;
+      color: #9CA3AF;
+      line-height: 1.7;
+      max-width: 320px;
+      margin: 0 auto 16px;
+    }
+    .footer-bottom {
+      font-size: 10px;
+      color: #4B5563;
+      border-top: 1px solid #1F2937;
+      padding-top: 12px;
+    }
+
+    /* ===========================
+       SCROLL ANIMATIONS
+    =========================== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       ANDROID GATE — shown to non-Android visitors ONLY
+  ============================================================ -->
+  <div id="android-gate" role="alert" aria-live="assertive">
+    <div class="gate-icon">📵</div>
+    <h1>Android Devices Only</h1>
+    <div class="gate-divider"></div>
+    <p>Please open this website on an Android phone.</p>
+    <p>This website does not work on laptop or computer.</p>
+    <div class="gate-divider"></div>
+    <p style="font-size:14px; color:#9CA3AF; margin-top:8px;">
+      यो website Android phone मा मात्र चल्छ।<br>
+      कृपया आफ्नो Android phone मा खोल्नुहोस्।
+    </p>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT — shown to Android visitors ONLY
+  ============================================================ -->
+  <div id="main-content">
+
+    <!-- HEADER -->
+    <header>
+      <div class="header-logo">
+        <img src="Sunriselogo.png" alt="Sunrise Technology" />
+      </div>
+      <nav>
+        <a href="#journey">25 Days</a>
+        <a href="#join">How To Join</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <!-- Decorative elements -->
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="sun-container">
+        <div class="sun-rays"></div>
+        <div class="sun"></div>
+      </div>
+      <svg class="mountains" viewBox="0 0 414 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <!-- Far mountains -->
+        <polygon points="0,140 0,90 60,40 110,75 160,30 200,60 240,20 290,65 340,35 390,70 414,55 414,140" fill="rgba(255,183,3,0.25)" />
+        <!-- Near mountains -->
+        <polygon points="0,140 0,110 50,70 100,100 150,60 200,90 250,55 300,88 350,65 400,95 414,80 414,140" fill="rgba(255,122,24,0.35)" />
+        <!-- Snow caps -->
+        <polygon points="150,60 160,68 170,60 165,52 155,52" fill="rgba(255,255,255,0.7)" />
+        <polygon points="240,20 252,32 265,20 258,10 247,10" fill="rgba(255,255,255,0.8)" />
+        <polygon points="340,35 349,44 359,35 354,26 344,26" fill="rgba(255,255,255,0.7)" />
+      </svg>
+
+      <!-- Hero content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🌅</span>
+          25 Days FREE &nbsp;|&nbsp; Online Class in Nepal &nbsp;|&nbsp; Beginner to Confident Trader
+        </div>
+        <h1 class="hero-title">
+          Your Trading Journey<br>Begins at <span class="highlight">Sunrise</span>
+        </h1>
+        <p class="hero-sub">
+          Sunrise Technology presents <strong>25 Days FREE Online Share Market Class in Nepal</strong>.
+          Har bihan, naya sikchya. Learn NEPSE share market step by step, in simple Nepali, from your first share to smart trading.
+        </p>
+
+        <div class="download-btn-wrap">
+          <a
+            href="https://transfersize.com/en/download/gcwkbt1lsrwb3cbo"
+            class="download-btn"
+            rel="noopener noreferrer"
+          >
+            <!-- Android icon SVG -->
+            <svg class="android-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.18 15.64a2.18 2.18 0 0 0 2.18 2.18c.48 0 .92-.16 1.27-.43v.25c0 .81.66 1.46 1.46 1.46s1.46-.65 1.46-1.46v-.25c.35.27.79.43 1.27.43a2.18 2.18 0 0 0 2.18-2.18V9.75H6.18v5.89zM4.64 9.75a2.18 2.18 0 0 0 0 4.36v-4.36zm14.72 0v4.36a2.18 2.18 0 0 0 0-4.36zM6.88 7H17.1a5.1 5.1 0 0 0-2.33-3.43l1.04-1.85a.38.38 0 0 0-.14-.52.39.39 0 0 0-.52.14L14.1 3.2A5.17 5.17 0 0 0 12 2.75c-.73 0-1.42.15-2.06.43L8.89 1.34a.39.39 0 0 0-.52-.14.38.38 0 0 0-.14.52l1.04 1.85A5.1 5.1 0 0 0 6.88 7zm3.34-2.5a.62.62 0 1 1 0 1.24.62.62 0 0 1 0-1.24zm3.56 0a.62.62 0 1 1 0 1.24.62.62 0 0 1 0-1.24z" fill="white"/>
+            </svg>
+            Download Google Meet Apk
+          </a>
+          <p class="btn-note">
+            📱 For Android phones only. Clicking this button will open the Google Meet Apk download link.
+          </p>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="phone-mockup-wrap">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-screen-content">
+              <div class="phone-label">NEPSE LIVE ↗</div>
+              <div class="phone-price">▲ +3.24%</div>
+              <svg class="nepse-chart" viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Chart background glow -->
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#4ade80" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Area fill -->
+                <path d="M0 90 L10 82 L20 78 L30 75 L40 70 L50 65 L60 60 L70 55 L80 50 L90 42 L100 38 L110 30 L120 25 L130 20 L140 14 L150 10 L160 5 L160 100 L0 100Z"
+                      fill="url(#chartGrad)" />
+                <!-- Line -->
+                <polyline
+                  points="0,90 10,82 20,78 30,75 40,70 50,65 60,60 70,55 80,50 90,42 100,38 110,30 120,25 130,20 140,14 150,10 160,5"
+                  fill="none"
+                  stroke="#4ade80"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <!-- Candlesticks -->
+                <rect x="12" y="80" width="6" height="8" fill="#4ade80" rx="1"/>
+                <rect x="22" y="74" width="6" height="10" fill="#f87171" rx="1"/>
+                <rect x="32" y="71" width="6" height="7" fill="#4ade80" rx="1"/>
+                <rect x="42" y="66" width="6" height="8" fill="#4ade80" rx="1"/>
+                <rect x="52" y="61" width="6" height="9" fill="#f87171" rx="1"/>
+                <rect x="62" y="55" width="6" height="9" fill="#4ade80" rx="1"/>
+                <rect x="72" y="48" width="6" height="11" fill="#4ade80" rx="1"/>
+                <rect x="82" y="44" width="6" height="8" fill="#f87171" rx="1"/>
+                <rect x="92" y="38" width="6" height="8" fill="#4ade80" rx="1"/>
+                <rect x="102" y="31" width="6" height="11" fill="#4ade80" rx="1"/>
+                <rect x="112" y="24" width="6" height="9" fill="#4ade80" rx="1"/>
+                <rect x="122" y="19" width="6" height="8" fill="#f87171" rx="1"/>
+                <rect x="132" y="13" width="6" height="10" fill="#4ade80" rx="1"/>
+                <rect x="142" y="7" width="6" height="9" fill="#4ade80" rx="1"/>
+                <rect x="152" y="3" width="6" height="8" fill="#4ade80" rx="1"/>
+                <!-- Sunrise dot -->
+                <circle cx="160" cy="5" r="4" fill="#FFB703">
+                  <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /hero -->
+
+    <!-- STRIP -->
+    <div class="strip">
+      <div class="strip-inner">
+        <div class="strip-item"><span class="strip-icon">🆓</span> 25 Days Completely Free</div>
+        <div class="strip-item"><span class="strip-icon">📡</span> Online Class</div>
+        <div class="strip-item"><span class="strip-icon">🇳🇵</span> Nepali Language</div>
+        <div class="strip-item"><span class="strip-icon">📱</span> Android Phones Only</div>
+        <div class="strip-item"><span class="strip-icon">🌱</span> Beginner Friendly</div>
+      </div>
+    </div>
+
+    <!-- WHO IS THIS FOR -->
+    <section class="who-section fade-in" id="who">
+      <div class="section-tag">Who Is This For?</div>
+      <h2 class="section-title">यो class कसको लागि हो? <span class="orange">तपाईंको लागि!</span></h2>
+      <p class="section-sub">यदि तपाईं Nepal मा बस्नुहुन्छ र share market सिक्न चाहनुहुन्छ भने — यो class तपाईंकै लागि हो।</p>
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-emoji">🎓</div>
+          <div>
+            <div class="who-label">Students</div>
+            <div class="who-desc">Earn while you study</div>
+          </div>
+        </div>
+        <div class="who-card">
+          <div class="who-emoji">🌱</div>
+          <div>
+            <div class="who-label">Complete Beginners</div>
+            <div class="who-desc">Never bought a share? Start here</div>
+          </div>
+        </div>
+        <div class="who-card">
+          <div class="who-emoji">💼</div>
+          <div>
+            <div class="who-label">Job Holders</div>
+            <div class="who-desc">Learn before office hours</div>
+          </div>
+        </div>
+        <div class="who-card">
+          <div class="who-emoji">🏠</div>
+          <div>
+            <div class="who-label">Housewives</div>
+            <div class="who-desc">Manage savings smartly</div>
+          </div>
+        </div>
+        <div class="who-card">
+          <div class="who-emoji">🏪</div>
+          <div>
+            <div class="who-label">Business Owners</div>
+            <div class="who-desc">Grow beyond your business</div>
+          </div>
+        </div>
+        <div class="who-card">
+          <div class="who-emoji">🇳🇵</div>
+          <div>
+            <div class="who-label">Anyone in Nepal</div>
+            <div class="who-desc">Wanting to trade NEPSE properly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 25 DAYS JOURNEY -->
+    <section class="journey-section fade-in" id="journey">
+      <div class="section-tag">25 Days Sunrise Journey</div>
+      <h2 class="section-title">तपाईंको <span class="orange">25 दिने</span> Trading यात्रा</h2>
+      <p class="section-sub">हरेक हप्ता एउटा नयाँ step। Zero बाट Confident Trader सम्म।</p>
+
+      <div class="week-card dawn fade-in">
+        <div class="week-header">
+          <div class="week-emoji">🌄</div>
+          <div class="week-info">
+            <div class="week-name">Week 1 — Dawn Basics</div>
+            <div class="week-days">Days 1–5</div>
+          </div>
+        </div>
+        <ul class="week-topics">
+          <li>What is share market and NEPSE — सुरुदेखि बुझौं</li>
+          <li>Demat account खोल्ने तरिका</li>
+          <li>Mero Share र TMS setup</li>
+          <li>IPO apply गर्ने कसरी</li>
+          <li>Share किन्ने र बेच्ने — first trade</li>
+        </ul>
+      </div>
+
+      <div class="week-card morning fade-in">
+        <div class="week-header">
+          <div class="week-emoji">🌞</div>
+          <div class="week-info">
+            <div class="week-name">Week 2 — Morning Fundamentals</div>
+            <div class="week-days">Days 6–10</div>
+          </div>
+        </div>
+        <ul class="week-topics">
+          <li>Company बुझ्ने — profit, loss, balance sheet</li>
+          <li>राम्रो company र risky company कसरी छुट्याउने</li>
+          <li>NEPSE sectors of Nepal — Banks, Hydropower, Insurance</li>
+          <li>Fundamental analysis — simple Nepali मा</li>
+          <li>Long term vs short term investment</li>
+        </ul>
+      </div>
+
+      <div class="week-card midday fade-in">
+        <div class="week-header">
+          <div class="week-emoji">📊</div>
+          <div class="week-info">
+            <div class="week-name">Week 3 — Midday Technical</div>
+            <div class="week-days">Days 11–15</div>
+          </div>
+        </div>
+        <ul class="week-topics">
+          <li>Chart reading — candlestick patterns बुझौं</li>
+          <li>Support र resistance levels</li>
+          <li>Technical indicators — RSI, MACD, Moving Average</li>
+          <li>Trend identify गर्ने तरिका</li>
+          <li>Chart मा pattern हेरेर trade गर्ने</li>
+        </ul>
+      </div>
+
+      <div class="week-card afternoon fade-in">
+        <div class="week-header">
+          <div class="week-emoji">💡</div>
+          <div class="week-info">
+            <div class="week-name">Week 4 — Afternoon Strategy</div>
+            <div class="week-days">Days 16–20</div>
+          </div>
+        </div>
+        <ul class="week-topics">
+          <li>Trading plan बनाउने — आफ्नो rule set गर्ने</li>
+          <li>Risk management — कति risk लिने</li>
+          <li>Money management — capital बचाउने तरिका</li>
+          <li>Trading psychology — डर र लोभ control गर्ने</li>
+          <li>Intraday र Swing trading ideas</li>
+        </ul>
+      </div>
+
+      <div class="week-card golden fade-in">
+        <div class="week-header">
+          <div class="week-emoji">🏆</div>
+          <div class="week-info">
+            <div class="week-name">Week 5 — Golden Practice</div>
+            <div class="week-days">Days 21–25</div>
+          </div>
+        </div>
+        <ul class="week-topics">
+          <li>Live chart practice — real NEPSE stocks</li>
+          <li>Portfolio building — diversification strategy</li>
+          <li>Common mistakes — traders ले गर्ने गल्तीहरू</li>
+          <li>25 days को revision र summary</li>
+          <li>Discipline सँग trade गर्ने — अन्तिम पाठ</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WHY SUNRISE -->
+    <section class="why-section fade-in" id="why">
+      <div class="section-tag">Why Sunrise Technology?</div>
+      <h2 class="section-title">किन <span class="orange">Sunrise Technology?</span></h2>
+      <p class="section-sub">हामीसँग सिक्नु भनेको — हरेक बिहान एउटा नयाँ उज्यालो ल्याउनु हो।</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">📱</div>
+          <div class="why-title">Android Phone मा</div>
+          <div class="why-desc">आफ्नै phone बाट, जहाँ भए पनि</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌅</div>
+          <div class="why-title">Step by Step, Every Morning</div>
+          <div class="why-desc">Har bihan, ek naya lesson</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🇳🇵</div>
+          <div class="why-title">Simple Nepali मा</div>
+          <div class="why-desc">No confusing English jargon</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📈</div>
+          <div class="why-title">Real NEPSE Examples</div>
+          <div class="why-desc">Nepal को real stocks सँग</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎯</div>
+          <div class="why-title">Practice Focused</div>
+          <div class="why-desc">सिद्धान्त कम, practice बढी</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🆓</div>
+          <div class="why-title">Completely FREE</div>
+          <div class="why-desc">25 days, zero cost</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO JOIN -->
+    <section class="join-section fade-in" id="join">
+      <div class="section-tag">How To Join</div>
+      <h2 class="section-title">कसरी Join गर्ने? <span class="orange">3 Easy Steps</span></h2>
+      <p class="section-sub">Android phone छ? बस यति नै गर्नुस् — 3 steps मात्र!</p>
+      <div class="steps-wrap">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">Click the Download Button Above</div>
+            <div class="step-desc">
+              यो website आफ्नो Android phone मा खोल्नुस् र माथि रहेको <strong>"Download Google Meet Apk"</strong> button click गर्नुस्।
+            </div>
+            <div class="step-note">↑ Scroll up to find the orange button</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">Download र Install गर्नुस्</div>
+            <div class="step-desc">
+              Link खुल्नेछ। App download गर्नुस् र आफ्नो Android phone मा install गर्नुस्।
+            </div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">App खोली Class Join गर्नुस्</div>
+            <div class="step-desc">
+              App open गर्नुस् र 25 दिने FREE online share market class join गर्नुस्। यात्रा सुरु!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section fade-in" id="faq">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">सामान्य <span class="orange">प्रश्नहरू</span></h2>
+      <p class="section-sub">तपाईंको मनमा प्रश्न छ? यहाँ जवाफ छ।</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">के 25 दिने class साँच्चै FREE हो?</div>
+          <p class="faq-a">हो। 25 दिनको पूरै class बिल्कुल FREE छ। कुनै पैसा लाग्दैन।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">के मलाई पहिले share market को ज्ञान चाहिन्छ?</div>
+          <p class="faq-a">हैन। हामी Zero बाट सुरु गर्छौं। कुनै पनि पूर्व ज्ञान आवश्यक छैन।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Class कुन भाषामा हुन्छ?</div>
+          <p class="faq-a">Simple Nepali मा, English trading terms सहित। सबै बुझ्ने गरी।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Join कसरी गर्ने?</div>
+          <p class="faq-a">Android phone मा यो website खोल्नुस्, "Download Google Meet Apk" click गर्नुस्, र app बाट class join गर्नुस्।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Laptop वा computer बाट यो website खोल्न सकिन्छ?</div>
+          <p class="faq-a">सकिँदैन। यो website Android phones को लागि मात्र बनाइएको हो।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">iPhone users join गर्न सक्छन्?</div>
+          <p class="faq-a">सक्दैनन्। यो website र download Android phones को लागि मात्र हो।</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">के म यो class पछि धेरै छिटो अमीर हुन्छु?</div>
+          <p class="faq-a">होइन। यो education र skill building हो। Share market trading मा risk हुन्छ। हामी profit guarantee गर्दैनौं।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <img src="Sunriselogo.png" alt="Sunrise Technology" />
+      </div>
+      <div class="footer-name">Sunrise Technology</div>
+      <p class="footer-disclaimer">
+        This training is for education only. Share market trading involves risk.
+        We do not guarantee profit.
+      </p>
+      <div class="footer-bottom">
+        &copy; 2024 Sunrise Technology. All rights reserved. &nbsp;|&nbsp; Android Phones Only.
+      </div>
+    </footer>
+
+  </div><!-- /#main-content -->
+
+  <!-- ============================================================
+       ANDROID GATE SCRIPT — runs before page renders
+  ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+      var isAndroid = /Android/i.test(ua);
+      var isMobile  = /Mobile/i.test(ua);
+      var isAndroidPhone = isAndroid && isMobile;
+
+      var gate    = document.getElementById('android-gate');
+      var content = document.getElementById('main-content');
+
+      if (isAndroidPhone) {
+        // Android phone — show the website
+        content.style.display = 'block';
+        gate.style.display    = 'none';
+      } else {
+        // Not an Android phone — show the blocking gate ONLY
+        gate.style.display    = 'flex';
+        content.style.display = 'none';
+        // Prevent any scrolling, selection, or right-click to prevent view-source bypass
+        document.body.style.overflow = 'hidden';
+      }
+    })();
+  </script>
+
+  <!-- ============================================================
+       SCROLL ANIMATION SCRIPT
+  ============================================================ -->
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.fade-in');
+      if (!els.length) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      els.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
